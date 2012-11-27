@@ -5,6 +5,8 @@ A good overview description of the various components that make up a Jmeter test
 here http://jmeter.apache.org/usermanual/test_plan.html. The “Samplers” tell JMeter to send 
 requests to a server and wait for a response.
 
+There also seems to be some JMeter code here http://activemq.apache.org/jmeter-performance-tests.html. 
+
 
 JMeter  has a JMS sampler already – http://jmeter.apache.org/usermanual/component_reference.html#JMS_Publisher. 
 You can also write your own sample that publishes messages to AMQ. The com.acme.AMQProducerQueueSampler is a
