@@ -10,11 +10,19 @@ JMeter  has a JMS sampler already – http://jmeter.apache.org/usermanual/compon
 You can also write your own sample that publishes messages to AMQ. The com.acme.AMQProducerQueueSampler is a
 very simple sampler that creates a JMSProducer and sends messages.
  
-The java  custom sampler must implement org.apache.jmeter.protocol.java.sampler.JavaSamplerClient.
+The java custom sampler must implement org.apache.jmeter.protocol.java.sampler.JavaSamplerClient. 
+Custom Java samplers can be added to a test plan by right clicking on the threadgroup -> "Sampler" -> "Java Sampler"
+On that panel you can select the appropriate class name and set appropriate parameters for the sampler class.
+
+The properties used by com.acme.AMQProducerQueueSampler are set by default and displayed in the "java sampler" panel.
+Theses properties values can by modified within the "java sampler" panel.
+
+For ease of use, I have created a sample Test Plan called "AMQProducerTest.jmx" (located in the root directory).
 
 
 
-How to install/run this example com.acme.AMQProducerQueueSampler Sampler ?
+How to install/run this example com.acme.AMQProducerQueueSampler Sampler?
+=========================================================================
 
 1. Download JMeter from http://jmeter.apache.org/download_jmeter.cgi
 
